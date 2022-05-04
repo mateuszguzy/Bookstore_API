@@ -164,9 +164,13 @@ def extract_from_json(book_data_in_json: dict) -> dict:
 
 def read_books_data_from_json_file() -> list:
     """Open and read data from bookstore database file."""
-    with open("books_data.json", mode="r") as file:
-        all_books_in_database = json.load(fp=file)
-    return all_books_in_database
+    # in case that JSON file is empty, trigger ValueError in max() function
+    try:
+        with open("books_data.json", mode="r") as file:
+            all_books_in_database = json.load(fp=file)
+        return all_books_in_database
+    except json.decoder.JSONDecodeError:
+        return list()
 
 
 def update_book(book_id: str, data_to_update_in_json: dict, import_by: str) -> dict:
