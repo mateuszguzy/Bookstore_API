@@ -18,13 +18,15 @@ Every book is defined by certain attributes e.g.:
 ```
 Books data is acquired from [Google Books API](https://developers.google.com/books/docs/v1/using#WorkingVolumes).
 
-All books data are stored and returned in JSON file.<hr>
+All books data are stored and returned in JSON file.
 ## API Endpoints
+
 ### Get all the books from database
 #### HTTP request
 ```
 GET http://example.com/books
 ```
+
 ### Get certain books from database
 All parameters MUST be present in request, but when certain parameter does not consider searched query, 
 it's value should be left empty. 
@@ -43,6 +45,7 @@ GET http://example.com/books?author=<surname>&from=<year>&to=<year>&acquired=<tr
 ```
 GET http://example.com/books/<book_id>
 ```
+
 ### Update single book data
 Every book can have any attribute updated, when it's stated in request body. 
 #### HTTP request
@@ -56,11 +59,13 @@ PATCH http://example.com/books/<book_id>
   "thumbnail": "http://some-other-thumbnail.com"
 }
 ```
+
 ### Delete single book entry
 #### HTTP request
 ```
 DEL http://example.com/books/<book_id>
 ```
+
 ### Import books data from [Google Books API](https://developers.google.com/books/docs/v1/using#WorkingVolumes)
 Allows to import any amount of books from [Google API](https://developers.google.com/books/docs/v1/using#WorkingVolumes),
 by author, title or any keyword associated with searched book

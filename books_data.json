@@ -10,86 +10,46 @@
       "Tadeusz Andrzej Olszański",
       "Włodzimierz Lewik"
     ],
-    "published_year": "2012",
     "acquired": true,
+    "published_year": "2012",
     "thumbnail": null
   },
   {
     "id": 2,
-    "external_id": "yfIyyQEACAAJ",
-    "title": "J. R. R. Tolkien",
+    "external_id": "D-prtAEACAAJ",
+    "title": "Bractwo pierscienia",
     "authors": [
-      "T. A. Shippey"
+      "J. R. R. Tolkien"
     ],
-    "published_year": "2019",
     "acquired": true,
+    "published_year": "2017",
     "thumbnail": null
   },
   {
     "id": 3,
-    "external_id": "kNEA-jgNI7wC",
-    "title": "Tolkien i C. S. Lewis",
-    "authors": null,
-    "published_year": "2011",
-    "acquired": true,
-    "thumbnail": "http://books.google.com/books/content?id=kNEA-jgNI7wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 4,
     "external_id": "2Lm4t09OWi0C",
     "title": "The Letters of J. R. R. Tolkien",
     "authors": [
       "Humphrey Carpenter",
       "Christopher Tolkien"
     ],
+    "acquired": true,
     "published_year": "2012",
-    "acquired": false,
     "thumbnail": "http://books.google.com/books/content?id=2Lm4t09OWi0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
   },
   {
-    "id": 5,
-    "external_id": "Uk9UDwAAQBAJ",
-    "title": "Creatio Fantastica nr 2 (57) 2017",
-    "authors": null,
-    "published_year": null,
-    "acquired": true,
-    "thumbnail": "http://books.google.com/books/content?id=Uk9UDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 6,
-    "external_id": "D-prtAEACAAJ",
-    "title": "Bractwo pierscienia",
-    "authors": [
-      "J. R. R. Tolkien"
-    ],
-    "acquired": false,
-    "published_year": "2017",
-    "thumbnail": null
-  },
-  {
-    "id": 7,
+    "id": 4,
     "external_id": "8pDatAEACAAJ",
     "title": "Silmarillion Wersja ilustrowana",
     "authors": [
       "J. R. R. Tolkien"
     ],
-    "acquired": false,
+    "acquired": true,
     "published_year": "2017",
     "thumbnail": null
   },
   {
-    "id": 8,
-    "external_id": "PjoADALqtaAC",
-    "title": "The Fall of Arthur",
-    "authors": [
-      "John Ronald Reuel Tolkien"
-    ],
-    "acquired": false,
-    "published_year": "2013",
-    "thumbnail": "http://books.google.com/books/content?id=PjoADALqtaAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 9,
+    "id": 5,
     "external_id": "KhkpswEACAAJ",
     "title": "Beren i Luthien",
     "authors": [
@@ -100,18 +60,7 @@
     "thumbnail": null
   },
   {
-    "id": 10,
-    "external_id": "MDQKEAAAQBAJ",
-    "title": "The Nature of Middle-Earth",
-    "authors": [
-      "J. R. R. Tolkien"
-    ],
-    "acquired": false,
-    "published_year": "2021",
-    "thumbnail": "http://books.google.com/books/content?id=MDQKEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
-  },
-  {
-    "id": 11,
+    "id": 6,
     "external_id": "7L_ra-0NDvMC",
     "title": "Letters From Father Christmas",
     "authors": [
@@ -123,7 +72,30 @@
     "thumbnail": "http://books.google.com/books/content?id=7L_ra-0NDvMC&printsec=frontcover&img=1&zoom=5&source=gbs_api"
   },
   {
-    "id": 12,
+    "id": 7,
+    "external_id": "MDQKEAAAQBAJ",
+    "title": "The Nature of Middle-Earth",
+    "authors": [
+      "J. R. R. Tolkien"
+    ],
+    "acquired": false,
+    "published_year": "2021",
+    "thumbnail": "http://books.google.com/books/content?id=MDQKEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+  },
+  {
+    "id": 8,
+    "external_id": "X78hLLg6__8C",
+    "title": "A Middle English Reader",
+    "authors": [
+      "Kenneth Sisam",
+      "J. R. R. Tolkien"
+    ],
+    "acquired": false,
+    "published_year": "2005",
+    "thumbnail": "http://books.google.com/books/content?id=X78hLLg6__8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+  },
+  {
+    "id": 9,
     "external_id": "LLSpngEACAAJ",
     "title": "The Hobbit, Or, There and Back Again",
     "authors": [
@@ -134,7 +106,7 @@
     "thumbnail": "http://books.google.com/books/content?id=LLSpngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
   },
   {
-    "id": 13,
+    "id": 10,
     "external_id": "4k8cngEACAAJ",
     "title": "Tolkien on Fairy-Stories",
     "authors": [
@@ -145,157 +117,5 @@
     "acquired": false,
     "published_year": "2014",
     "thumbnail": "http://books.google.com/books/content?id=4k8cngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
-  },
-  {
-    "id": 14,
-    "external_id": "xvGLsT_dP_YC",
-    "title": "Tolkien's Art",
-    "authors": [
-      "Jane Chance"
-    ],
-    "acquired": false,
-    "published_year": "2001",
-    "thumbnail": "http://books.google.com/books/content?id=xvGLsT_dP_YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 15,
-    "external_id": "uDQusCjsL-YC",
-    "title": "J. R. R. Tolkien: A Biography",
-    "authors": [
-      "Humphrey Carpenter"
-    ],
-    "acquired": false,
-    "published_year": "2011",
-    "thumbnail": "http://books.google.com/books/content?id=uDQusCjsL-YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 16,
-    "external_id": "ltLLDwAAQBAJ",
-    "title": "The Ring Legends of Tolkien",
-    "authors": [
-      "David Day"
-    ],
-    "acquired": false,
-    "published_year": "2020",
-    "thumbnail": "http://books.google.com/books/content?id=ltLLDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 17,
-    "external_id": "MocR5l-N8xIC",
-    "title": "The Origins of Tolkien's Middle-earth For Dummies",
-    "authors": [
-      "Greg Harvey"
-    ],
-    "acquired": false,
-    "published_year": "2011",
-    "thumbnail": "http://books.google.com/books/content?id=MocR5l-N8xIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 18,
-    "external_id": "pNstEAAAQBAJ",
-    "title": "Recipes from the World of Tolkien",
-    "authors": [
-      "Robert Tuesley Anderson"
-    ],
-    "acquired": false,
-    "published_year": "2020",
-    "thumbnail": "http://books.google.com/books/content?id=pNstEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 19,
-    "external_id": "MRn9jgEACAAJ",
-    "title": "Powrót króla",
-    "authors": null,
-    "acquired": false,
-    "published_year": "2015",
-    "thumbnail": null
-  },
-  {
-    "id": 20,
-    "external_id": "_KPPAAAAMAAJ",
-    "title": "Władca pierścieni: Powrót króla",
-    "authors": [
-      "John Ronald Reuel Tolkien"
-    ],
-    "acquired": false,
-    "published_year": "1990",
-    "thumbnail": "http://books.google.com/books/content?id=_KPPAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
-  },
-  {
-    "id": 21,
-    "external_id": "tTWvtAEACAAJ",
-    "title": "Powrót króla",
-    "authors": [
-      "John Ronald Reuel Tolkien"
-    ],
-    "acquired": false,
-    "published_year": "1990",
-    "thumbnail": null
-  },
-  {
-    "id": 22,
-    "external_id": "e2ctAAAACAAJ",
-    "title": "Powrót króla",
-    "authors": [
-      "J. R. R. Tolkien"
-    ],
-    "acquired": false,
-    "published_year": "2001",
-    "thumbnail": null
-  },
-  {
-    "id": 23,
-    "external_id": "jH2cGQAACAAJ",
-    "title": "Powrót króla",
-    "authors": [
-      "John Ronald Reuel Tolkien"
-    ],
-    "acquired": false,
-    "published_year": "1997",
-    "thumbnail": null
-  },
-  {
-    "id": 24,
-    "external_id": "PSUREAAAQBAJ",
-    "title": "Władca Pierścieni: Powrót Króla",
-    "authors": [
-      "Paweł Turalski"
-    ],
-    "acquired": false,
-    "published_year": "2022",
-    "thumbnail": "http://books.google.com/books/content?id=PSUREAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 25,
-    "external_id": "FQJvBgAAQBAJ",
-    "title": "Powrót do Lwowa",
-    "authors": [
-      "Maria Nurowska"
-    ],
-    "acquired": false,
-    "published_year": "2005",
-    "thumbnail": "http://books.google.com/books/content?id=FQJvBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-  },
-  {
-    "id": 26,
-    "external_id": "e9lIAAAAIAAJ",
-    "title": "Powrót do natury",
-    "authors": [
-      "Juliusz Kydryński"
-    ],
-    "acquired": false,
-    "published_year": "1984",
-    "thumbnail": "http://books.google.com/books/content?id=e9lIAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
-  },
-  {
-    "id": 27,
-    "external_id": "IKPPAAAAMAAJ",
-    "title": "Władca pierścieni: Wyprawa",
-    "authors": [
-      "John Ronald Reuel Tolkien"
-    ],
-    "acquired": false,
-    "published_year": "1990",
-    "thumbnail": "http://books.google.com/books/content?id=IKPPAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
   }
 ]
