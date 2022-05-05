@@ -176,6 +176,12 @@ def read_books_data_from_json_file() -> list:
         return list()
 
 
+def save_data_to_json(all_books_in_database: list) -> None:
+    """Simply save data ino JSON file."""
+    with open("books_data.json", mode="w") as file:
+        json.dump(obj=all_books_in_database, fp=file, ensure_ascii=False)
+
+
 def update_book(book_id: str, data_to_update_in_json: dict, import_by: str) -> dict:
     """Takes care of updating data in bookstore database.
 
@@ -197,12 +203,6 @@ def update_book(book_id: str, data_to_update_in_json: dict, import_by: str) -> d
             return book_to_update
         else:
             continue
-
-
-def save_data_to_json(all_books_in_database: list) -> None:
-    """Simply save data ino JSON file."""
-    with open("books_data.json", mode="w") as file:
-        json.dump(obj=all_books_in_database, fp=file, ensure_ascii=False)
 
 
 def filter_results(filters_parameters: dict) -> list:
