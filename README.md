@@ -32,9 +32,10 @@ All parameters MUST be present in request, but when certain parameter does not c
 it's value should be left empty. 
 #### HTTP request
 ```
-GET http://example.com/books?author=<surname>&from=<year>&to=<year>&acquired=<true/false>
+GET http://example.com/books?title=<keyword>&author=<keyword>&from=<year>&to=<year>&acquired=<true/false>
 ```
 #### Query Parameters:
+- title - any keyword from book's title,
 - author - name or surname of searched author,
 - from - year FROM which books should be showed,
 - to - year TO which books should be showed,

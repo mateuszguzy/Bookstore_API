@@ -9,6 +9,7 @@ app = Flask(__name__)
 api = Api(app)
 # --- DEFINE REQUEST PARSER TO EXTRACT FILTER PARAMETERS
 parser = reqparse.RequestParser()
+parser.add_argument("title", location="args")
 parser.add_argument("author", location="args")
 parser.add_argument("from", location="args")
 parser.add_argument("to", location="args")
@@ -117,6 +118,7 @@ class ImportBooks(Resource):
         for book in all_books_in_database:
             current_books_ids.append(book["external_id"])
         # iterate through every book returned by Google API
+        new_books_counter = int()
         for book in response.json()["items"]:
             if book["id"] in current_books_ids:
                 # due to Python counting from 0, need to add 1 to acquire wanted book ID
@@ -126,6 +128,7 @@ class ImportBooks(Resource):
                 continue
             # add currently added book to current_books_ids list, so it's also checked for duplicates
             current_books_ids.append(book["id"])
+            new_books_counter += 1
             # extract book data from JSON and save it into bookstore database
             new_book = extract_from_json(book)
             new_book["id"] = next_free_id()
@@ -134,7 +137,7 @@ class ImportBooks(Resource):
             all_books_in_database = read_books_data_from_json_file()
             all_books_in_database.append(marshal(data=new_book, fields=resource_fields_for_single_book))
             save_data_to_json(all_books_in_database=all_books_in_database)
-        return {"imported": 200}
+        return {f"Imported {new_books_counter} new books": 200}
 
 
 # ------ DEFINE FUNCTIONS
@@ -214,12 +217,22 @@ def filter_results(filters_parameters: dict) -> list:
         filters_parameters["from"] = "0"
     if filters_parameters["to"] == "":
         filters_parameters["to"] = "9999"
-    # when there is no specified author, pass all authors (all books) to middle list
-    if filters_parameters["author"] == "":
+    # when there is no specified title, pass all books to middle list
+    if filters_parameters["title"] == "":
         middle_filtered_books_list = all_books_in_database
-    # when author is specified, check all books in DB for match
+    # when title is specified, check all books in DB for matches
     else:
         for book in all_books_in_database:
+            # when title is matched add book to middle list
+            if filters_parameters["title"].lower() in book["title"].lower():
+                middle_filtered_books_list.append(book)
+    # when there is no specified author there is no middle list filtering needed
+    if filters_parameters["author"] == "":
+        pass
+    # when author is specified, check middle list for matches
+    else:
+        for book in middle_filtered_books_list:
+            author_found = False
             # some books do not have authors, in that case assign empty string so algorithm can keep working
             if book["authors"] is None:
                 book["authors"] = str()
@@ -227,8 +240,11 @@ def filter_results(filters_parameters: dict) -> list:
             for author in book["authors"]:
                 # when author is matched add book to middle list and break the for loop
                 if filters_parameters["author"].lower() in author.lower():
-                    middle_filtered_books_list.append(book)
+                    author_found = True
                     break
+            # when any book author won't match remove that book from middle list
+            if not author_found:
+                middle_filtered_books_list.pop(middle_filtered_books_list.index(book))
     # next filtering is carried on middle list with initially filtered books
     for book in middle_filtered_books_list:
         # some books in database might not have assigned year of publication, in that case make it "0"
